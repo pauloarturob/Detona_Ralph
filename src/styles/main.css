@@ -1,0 +1,120 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+        background-image: url("../img/parede.jpg");
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 90px;
+    width: 100%;
+    background-color: #7fffd4;
+    color: #000000;
+    border-bottom: 5px solid gold;
+}
+
+.panel {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #663399; */
+    padding: 5px;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    border: 1px solid #000000;
+    background-color: #6495ed;
+
+}
+
+.enemy {
+    background-image: url("../img/leon.jpeg");
+    background-size: cover;
+    background-color: hsl(124, 100%, 53%);
+}
+.menu-lives{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+.second{
+    margin-top: 10px;
+}
+
+/* Estilos para o contêiner do botão */
+.restart-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilos para o botão */
+#restart-btn {
+    background-color: #ff0000; /* Cor de fundo vermelha */
+    color: #fff; /* Cor do texto branca */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-family: 'Press Start 2P', cursive; /* Fonte do botão */
+    font-size: 14px; /* Tamanho do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+/* Estilo ao passar o mouse no botão */
+#restart-btn:hover {
+    background-color: #cc0000; /* Cor mais escura ao passar o mouse */
+}
+/* Estilo do campo de entrada de tempo */
+.time-input {
+    margin-bottom: 20px; /* Espaçamento abaixo do campo */
+    display: flex; /* Usar flexbox para alinhar o label e o input */
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Alinha verticalmente */
+}
+
+.time-input label {
+    font-size: 18px; /* Tamanho da fonte do label */
+    margin-right: 10px; /* Espaçamento à direita do label */
+}
+
+#time-set {
+    width: 100px; /* Largura do campo de entrada */
+    padding: 5px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte do texto do input */
+    border: 2px solid #666; /* Borda do campo de entrada */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: border-color 0.3s; /* Transição suave para a cor da borda */
+}
+
+#time-set:focus {
+    border-color: #4CAF50; /* Cor da borda ao focar no campo */
+    outline: none; /* Remove o contorno padrão */
+}
+.resultado-final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 100px;
+    margin: 20px auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
